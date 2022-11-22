@@ -46,5 +46,6 @@ func NewExecutionCmd(pipelineOptions *pipeline.PipelineOptions) *cobra.Command {
 	cmd.AddCommand(NewCancelCmd(options))
 	cmd.AddCommand(NewGetCmd(options))
 	cmd.AddCommand(NewListCmd(options))
+	cmd.AddCommand(NewReorderCmd(options))
 	return cmd
 }
